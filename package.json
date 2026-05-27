@@ -1,0 +1,22 @@
+{
+  "name": "@omni/harvest-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "harvest-cli": "./cli.ts"
+  },
+  "scripts": {
+    "start": "npx tsx cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "omni": {
+    "type": "product",
+    "category": "uncategorized",
+    "status": "active",
+    "vault_bucket": "harvest-cli"
+  }
+}
