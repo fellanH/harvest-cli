@@ -1,0 +1,19 @@
+name: harvest-cli
+id: harvest-cli
+category: connector
+type: connector
+authority: autonomous
+layout: flat
+status: active
+owner: felix
+
+vault_bucket: harvest-cli
+
+paths:
+  work_root: project-management
+
+seat:
+  name: harvest-cli
+  spawn_path: .
+  label: harvest-cli
+  tier: build
