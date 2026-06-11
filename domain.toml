@@ -1,0 +1,16 @@
+# domain.toml — harvest-cli package manifest (portable core: id · version · group · exposes)
+# The canonical territory store (spec domain-canonical-store). Backfilled with a `register = true`
+# capability so `omni connector sync` projects it from the scan — this is what let the entry move
+# OUT of the hand-maintained connectors-overlay.json (proof that a new workspace becomes drainable
+# by adding ONE file).
+id = "harvest-cli"
+version = "0.1.0"
+group = "omni-connectors"
+
+[exposes]
+harvest-cli = { transport = "cli", bin = "cli.ts", kind = "verb-set", register = true, description = "Harvest API v2 CLI for omni time-reporting — log/list entries, projects, today/week summaries." }
+
+[[consumes]]
+from = "omni-v3"
+kind = "cli"
+name = "omni"
